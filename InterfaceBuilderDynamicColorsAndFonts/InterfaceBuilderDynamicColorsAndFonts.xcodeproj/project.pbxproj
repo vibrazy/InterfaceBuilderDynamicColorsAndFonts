@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58CB777E1A9FA56D0032571D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB777D1A9FA56D0032571D /* main.m */; };
+		58CB77811A9FA56D0032571D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77801A9FA56D0032571D /* AppDelegate.m */; };
+		58CB77841A9FA56D0032571D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77831A9FA56D0032571D /* ViewController.m */; };
+		58CB77871A9FA56D0032571D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CB77851A9FA56D0032571D /* Main.storyboard */; };
+		58CB77891A9FA56D0032571D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CB77881A9FA56D0032571D /* Images.xcassets */; };
+		58CB778C1A9FA56D0032571D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CB778A1A9FA56D0032571D /* LaunchScreen.xib */; };
+		58CB77981A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77971A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.m */; };
+		58CB77A31A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A21A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m */; };
+		58CB77A71A9FA6110032571D /* UIColor+ProjectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A61A9FA6110032571D /* UIColor+ProjectColors.m */; };
+		58CB77AA1A9FA74E0032571D /* UIFont+ProjectFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58CB77921A9FA56D0032571D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58CB77701A9FA56D0032571D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58CB77771A9FA56D0032571D;
+			remoteInfo = InterfaceBuilderDynamicColorsAndFonts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58CB77781A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceBuilderDynamicColorsAndFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CB777C1A9FA56D0032571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58CB777D1A9FA56D0032571D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58CB777F1A9FA56D0032571D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58CB77801A9FA56D0032571D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58CB77821A9FA56D0032571D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		58CB77831A9FA56D0032571D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		58CB77861A9FA56D0032571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58CB77881A9FA56D0032571D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		58CB778B1A9FA56D0032571D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		58CB77911A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterfaceBuilderDynamicColorsAndFontsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CB77961A9FA56D0032571D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58CB77971A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceBuilderDynamicColorsAndFontsTests.m; sourceTree = "<group>"; };
+		58CB77A21A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DHTInterfaceBuilderAppTheme.m; path = Helpers/DHTInterfaceBuilderAppTheme.m; sourceTree = "<group>"; };
+		58CB77A51A9FA6110032571D /* UIColor+ProjectColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ProjectColors.h"; path = "Categories/UIColor+ProjectColors.h"; sourceTree = "<group>"; };
+		58CB77A61A9FA6110032571D /* UIColor+ProjectColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ProjectColors.m"; path = "Categories/UIColor+ProjectColors.m"; sourceTree = "<group>"; };
+		58CB77A81A9FA74E0032571D /* UIFont+ProjectFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+ProjectFonts.h"; path = "Categories/UIFont+ProjectFonts.h"; sourceTree = "<group>"; };
+		58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+ProjectFonts.m"; path = "Categories/UIFont+ProjectFonts.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58CB77751A9FA56D0032571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58CB778E1A9FA56D0032571D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58CB776F1A9FA56D0032571D = {
+			isa = PBXGroup;
+			children = (
+				58CB777A1A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */,
+				58CB77941A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests */,
+				58CB77791A9FA56D0032571D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58CB77791A9FA56D0032571D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77781A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts.app */,
+				58CB77911A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58CB777A1A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77A41A9FA5F40032571D /* Categories */,
+				58CB77A11A9FA5A50032571D /* Helpers */,
+				58CB777F1A9FA56D0032571D /* AppDelegate.h */,
+				58CB77801A9FA56D0032571D /* AppDelegate.m */,
+				58CB77821A9FA56D0032571D /* ViewController.h */,
+				58CB77831A9FA56D0032571D /* ViewController.m */,
+				58CB77851A9FA56D0032571D /* Main.storyboard */,
+				58CB77881A9FA56D0032571D /* Images.xcassets */,
+				58CB778A1A9FA56D0032571D /* LaunchScreen.xib */,
+				58CB777B1A9FA56D0032571D /* Supporting Files */,
+			);
+			path = InterfaceBuilderDynamicColorsAndFonts;
+			sourceTree = "<group>";
+		};
+		58CB777B1A9FA56D0032571D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58CB777C1A9FA56D0032571D /* Info.plist */,
+				58CB777D1A9FA56D0032571D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58CB77941A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77971A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.m */,
+				58CB77951A9FA56D0032571D /* Supporting Files */,
+			);
+			path = InterfaceBuilderDynamicColorsAndFontsTests;
+			sourceTree = "<group>";
+		};
+		58CB77951A9FA56D0032571D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77961A9FA56D0032571D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58CB77A11A9FA5A50032571D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77A21A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		58CB77A41A9FA5F40032571D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77A51A9FA6110032571D /* UIColor+ProjectColors.h */,
+				58CB77A61A9FA6110032571D /* UIColor+ProjectColors.m */,
+				58CB77A81A9FA74E0032571D /* UIFont+ProjectFonts.h */,
+				58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58CB77771A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58CB779B1A9FA56D0032571D /* Build configuration list for PBXNativeTarget "InterfaceBuilderDynamicColorsAndFonts" */;
+			buildPhases = (
+				58CB77741A9FA56D0032571D /* Sources */,
+				58CB77751A9FA56D0032571D /* Frameworks */,
+				58CB77761A9FA56D0032571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterfaceBuilderDynamicColorsAndFonts;
+			productName = InterfaceBuilderDynamicColorsAndFonts;
+			productReference = 58CB77781A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58CB77901A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58CB779E1A9FA56D0032571D /* Build configuration list for PBXNativeTarget "InterfaceBuilderDynamicColorsAndFontsTests" */;
+			buildPhases = (
+				58CB778D1A9FA56D0032571D /* Sources */,
+				58CB778E1A9FA56D0032571D /* Frameworks */,
+				58CB778F1A9FA56D0032571D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58CB77931A9FA56D0032571D /* PBXTargetDependency */,
+			);
+			name = InterfaceBuilderDynamicColorsAndFontsTests;
+			productName = InterfaceBuilderDynamicColorsAndFontsTests;
+			productReference = 58CB77911A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58CB77701A9FA56D0032571D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Tavares";
+				TargetAttributes = {
+					58CB77771A9FA56D0032571D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					58CB77901A9FA56D0032571D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 58CB77771A9FA56D0032571D;
+					};
+				};
+			};
+			buildConfigurationList = 58CB77731A9FA56D0032571D /* Build configuration list for PBXProject "InterfaceBuilderDynamicColorsAndFonts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58CB776F1A9FA56D0032571D;
+			productRefGroup = 58CB77791A9FA56D0032571D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58CB77771A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */,
+				58CB77901A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58CB77761A9FA56D0032571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB77871A9FA56D0032571D /* Main.storyboard in Resources */,
+				58CB778C1A9FA56D0032571D /* LaunchScreen.xib in Resources */,
+				58CB77891A9FA56D0032571D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58CB778F1A9FA56D0032571D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58CB77741A9FA56D0032571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB77A31A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m in Sources */,
+				58CB77841A9FA56D0032571D /* ViewController.m in Sources */,
+				58CB77811A9FA56D0032571D /* AppDelegate.m in Sources */,
+				58CB777E1A9FA56D0032571D /* main.m in Sources */,
+				58CB77A71A9FA6110032571D /* UIColor+ProjectColors.m in Sources */,
+				58CB77AA1A9FA74E0032571D /* UIFont+ProjectFonts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58CB778D1A9FA56D0032571D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB77981A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFontsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58CB77931A9FA56D0032571D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58CB77771A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */;
+			targetProxy = 58CB77921A9FA56D0032571D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58CB77851A9FA56D0032571D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58CB77861A9FA56D0032571D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58CB778A1A9FA56D0032571D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58CB778B1A9FA56D0032571D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58CB77991A9FA56D0032571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58CB779A1A9FA56D0032571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58CB779C1A9FA56D0032571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterfaceBuilderDynamicColorsAndFonts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58CB779D1A9FA56D0032571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterfaceBuilderDynamicColorsAndFonts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58CB779F1A9FA56D0032571D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InterfaceBuilderDynamicColorsAndFontsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterfaceBuilderDynamicColorsAndFonts.app/InterfaceBuilderDynamicColorsAndFonts";
+			};
+			name = Debug;
+		};
+		58CB77A01A9FA56D0032571D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InterfaceBuilderDynamicColorsAndFontsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterfaceBuilderDynamicColorsAndFonts.app/InterfaceBuilderDynamicColorsAndFonts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58CB77731A9FA56D0032571D /* Build configuration list for PBXProject "InterfaceBuilderDynamicColorsAndFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58CB77991A9FA56D0032571D /* Debug */,
+				58CB779A1A9FA56D0032571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58CB779B1A9FA56D0032571D /* Build configuration list for PBXNativeTarget "InterfaceBuilderDynamicColorsAndFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58CB779C1A9FA56D0032571D /* Debug */,
+				58CB779D1A9FA56D0032571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58CB779E1A9FA56D0032571D /* Build configuration list for PBXNativeTarget "InterfaceBuilderDynamicColorsAndFontsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58CB779F1A9FA56D0032571D /* Debug */,
+				58CB77A01A9FA56D0032571D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58CB77701A9FA56D0032571D /* Project object */;
+}
