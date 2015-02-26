@@ -17,6 +17,7 @@
 		58CB77A31A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A21A9FA5C80032571D /* DHTInterfaceBuilderAppTheme.m */; };
 		58CB77A71A9FA6110032571D /* UIColor+ProjectColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A61A9FA6110032571D /* UIColor+ProjectColors.m */; };
 		58CB77AA1A9FA74E0032571D /* UIFont+ProjectFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */; };
+		58CB77AD1A9FA94E0032571D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58CB77AC1A9FA94E0032571D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		58CB77A61A9FA6110032571D /* UIColor+ProjectColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ProjectColors.m"; path = "Categories/UIColor+ProjectColors.m"; sourceTree = "<group>"; };
 		58CB77A81A9FA74E0032571D /* UIFont+ProjectFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+ProjectFonts.h"; path = "Categories/UIFont+ProjectFonts.h"; sourceTree = "<group>"; };
 		58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+ProjectFonts.m"; path = "Categories/UIFont+ProjectFonts.m"; sourceTree = "<group>"; };
+		58CB77AC1A9FA94E0032571D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Localization/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		58CB777A1A9FA56D0032571D /* InterfaceBuilderDynamicColorsAndFonts */ = {
 			isa = PBXGroup;
 			children = (
+				58CB77AB1A9FA9250032571D /* Localization */,
 				58CB77A41A9FA5F40032571D /* Categories */,
 				58CB77A11A9FA5A50032571D /* Helpers */,
 				58CB777F1A9FA56D0032571D /* AppDelegate.h */,
@@ -146,6 +149,14 @@
 				58CB77A91A9FA74E0032571D /* UIFont+ProjectFonts.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		58CB77AB1A9FA9250032571D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				58CB77AC1A9FA94E0032571D /* Localizable.strings */,
+			);
+			name = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58CB77871A9FA56D0032571D /* Main.storyboard in Resources */,
+				58CB77AD1A9FA94E0032571D /* Localizable.strings in Resources */,
 				58CB778C1A9FA56D0032571D /* LaunchScreen.xib in Resources */,
 				58CB77891A9FA56D0032571D /* Images.xcassets in Resources */,
 			);

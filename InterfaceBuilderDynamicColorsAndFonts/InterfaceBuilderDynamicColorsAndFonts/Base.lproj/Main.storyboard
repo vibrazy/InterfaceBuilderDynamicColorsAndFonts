@@ -46,6 +46,17 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="body1"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Localized Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McK-qE-gNh" customClass="DHTUILabel">
+                                <rect key="frame" x="39" y="335" width="545" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="babyBlueColor"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="header1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_localizedText" value="someKey" localized="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <userDefinedRuntimeAttributes>

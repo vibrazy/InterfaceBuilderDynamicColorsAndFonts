@@ -57,7 +57,7 @@ IB_DESIGNABLE
     NSString *string = [bundle localizedStringForKey:_localizedText value:@"" table:nil];
     SEL selector = NSSelectorFromString(@"setText:");
     
-    string = [[bundle localizations] componentsJoinedByString:@","];
+//    string = [[bundle localizations] componentsJoinedByString:@","];
     
     if ([self respondsToSelector:selector])
     {
