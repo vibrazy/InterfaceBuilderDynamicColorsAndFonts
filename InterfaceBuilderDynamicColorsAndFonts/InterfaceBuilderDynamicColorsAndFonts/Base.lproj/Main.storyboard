@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,18 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Header 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwb-ND-xPK" customClass="DHTUILabel">
-                                <rect key="frame" x="39" y="45" width="545" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="honeydewColor"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="header1"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY4-iA-L7B" customClass="DHTUILabel">
-                                <rect key="frame" x="39" y="115" width="545" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY4-iA-L7B" customClass="DHTUILabel">
+                                <rect key="frame" x="16" y="115" width="568" height="55"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,36 +27,131 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="body2"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="UITextView " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zTb-4G-JMJ" customClass="DHTUITextView">
-                                <rect key="frame" x="39" y="186" width="545" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="UITextView " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zTb-4G-JMJ" customClass="DHTUITextView">
+                                <rect key="frame" x="16" y="186" width="568" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="jvE-ey-rLO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="limeColor"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="body1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="honeydewColor"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="header1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_localizedText" value="anotherNewKey" localized="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Localized Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McK-qE-gNh" customClass="DHTUILabel">
-                                <rect key="frame" x="39" y="335" width="545" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwb-ND-xPK" customClass="DHTUILabel">
+                                <rect key="frame" x="16" y="45" width="568" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="SgL-57-Wgu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="honeydewColor"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="header1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_localizedText" value="anotherNewKey" localized="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pey-WH-ach" customClass="DHTUIButton">
+                                <rect key="frame" x="194.5" y="447" width="211" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="GcB-af-ZxV"/>
+                                </constraints>
+                                <state key="normal" title="Some Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleLabel._textFont" value="body2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="limeColor"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_titleColorNormalState" value="oliveDrabColor"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_titleColorHighlightedState" value="blackCustom"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localized Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McK-qE-gNh" customClass="DHTUILabel">
+                                <rect key="frame" x="16" y="335" width="568" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="wwS-G9-GLZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="babyBlueColor"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="_textFont" value="header1"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="_localizedText" value="someKey" localized="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_localizedText" value="anotherNewKey" localized="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0t7-un-WPg"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="leading" secondItem="McK-qE-gNh" secondAttribute="leading" id="2pQ-6g-yqA"/>
+                            <constraint firstItem="McK-qE-gNh" firstAttribute="top" secondItem="zTb-4G-JMJ" secondAttribute="bottom" constant="21" id="56J-jE-Zzf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Pey-WH-ach" secondAttribute="bottom" constant="99" id="9dA-01-E7P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kwb-ND-xPK" secondAttribute="trailing" id="FoX-Lo-YSd"/>
+                            <constraint firstItem="DY4-iA-L7B" firstAttribute="top" secondItem="kwb-ND-xPK" secondAttribute="bottom" constant="15" id="GbJ-LK-i0b"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="leading" secondItem="DY4-iA-L7B" secondAttribute="leading" id="IAZ-jB-aB5"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="trailing" secondItem="DY4-iA-L7B" secondAttribute="trailing" id="IZ1-Of-FCn"/>
+                            <constraint firstAttribute="centerX" secondItem="kwb-ND-xPK" secondAttribute="centerX" id="S9H-jY-lxM"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="Scs-PR-XgC"/>
+                            <constraint firstItem="zTb-4G-JMJ" firstAttribute="top" secondItem="DY4-iA-L7B" secondAttribute="bottom" constant="16" id="UNK-VV-cu2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="McK-qE-gNh" secondAttribute="bottom" constant="210" id="YUk-Yg-7hU"/>
+                            <constraint firstAttribute="centerX" secondItem="Pey-WH-ach" secondAttribute="centerX" id="bH3-Sj-UkW"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="leading" secondItem="zTb-4G-JMJ" secondAttribute="leading" id="fGK-fM-3Kv"/>
+                            <constraint firstItem="Pey-WH-ach" firstAttribute="top" secondItem="McK-qE-gNh" secondAttribute="bottom" constant="57" id="fUy-cK-Et8"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="trailing" secondItem="McK-qE-gNh" secondAttribute="trailing" id="yf7-Ye-rr1"/>
+                            <constraint firstItem="kwb-ND-xPK" firstAttribute="trailing" secondItem="zTb-4G-JMJ" secondAttribute="trailing" id="ysH-d9-lES"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="oliveDrabColor"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="_backgroundColor" value="limeColor"/>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <connections>
+                        <outlet property="someButton" destination="Pey-WH-ach" id="PKI-O9-zWq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G67-Ve-Ku7">
+            <objects>
+                <viewController id="tVv-UJ-gll" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Psa-7J-29l"/>
+                        <viewControllerLayoutGuide type="bottom" id="yMr-vj-cQx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D4F-aZ-gdf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFX-rI-7d8">
+                                <rect key="frame" x="39" y="50" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pv5-Wa-dDN">
+                                <rect key="frame" x="27" y="96" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="RFX-rI-7d8" id="PQd-ko-QQH"/>
+                        <outlet property="textView" destination="Pv5-Wa-dDN" id="cfG-QT-8y5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkA-pR-ist" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="317"/>
         </scene>
     </scenes>
 </document>

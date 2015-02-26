@@ -23,6 +23,8 @@ IB_DESIGNABLE
 @property (nonatomic, copy) NSString *_textColor;
 @property (nonatomic, copy) NSString *_backgroundColor;
 @property (nonatomic, copy) NSString *_localizedText;
+@property (nonatomic, copy) NSString *_titleColorNormalState;
+@property (nonatomic, copy) NSString *_titleColorHighlightedState;
 
 @end
 
@@ -33,8 +35,45 @@ IB_DESIGNABLE
 @dynamic _textColor;
 @dynamic _backgroundColor;
 @dynamic _localizedText;
+@dynamic _titleColorNormalState;
+@dynamic _titleColorHighlightedState;
 
 #pragma mark - User Defined Attributes
+
+#pragma mark - UIButton Specific
+
+- (void)set_titleColorNormalState:(NSString *)methodName
+{
+    [self setTitleColorForMethodName:methodName forState:UIControlStateNormal];
+}
+
+- (void)set_titleColorHighlightedState:(NSString *)methodName
+{
+     [self setTitleColorForMethodName:methodName forState:UIControlStateHighlighted];
+}
+
+- (void)setTitleColorForMethodName:(NSString *)methodName
+                          forState:(UIControlState)state
+{
+    if ([self isKindOfClass:[UIButton class]])
+    {
+        UIButton *button = (UIButton*)self;
+        
+        Class class = NSClassFromString(@"UIColor");
+        SEL selector = NSSelectorFromString(methodName);
+        
+        UIColor *color;
+        SuppressPerformSelectorLeakWarning(color = (UIColor*)[class performSelector:selector];);
+        
+        [button setTitleColor:color forState:state];
+    }
+    else // lets treat it as a normal textColor
+    {
+        [self set_textColor:methodName];
+    }
+}
+
+#pragma mark -
 
 - (void)set_textFont:(NSString *)methodName
 {
@@ -92,7 +131,7 @@ IB_DESIGNABLE
     if ([self respondsToSelector:setFontSelector])
     {
         SuppressPerformSelectorLeakWarning([self performSelector:setFontSelector withObject:object];);
-    }
+    }    
 }
 
 @end
@@ -102,3 +141,4 @@ IB_DESIGNABLE
 IB_DESIGNABLE @interface DHTUIView : UIView  @end @implementation DHTUIView @end
 IB_DESIGNABLE @interface DHTUILabel : UILabel  @end @implementation DHTUILabel @end
 IB_DESIGNABLE @interface DHTUITextView : UITextView  @end @implementation DHTUITextView @end
+IB_DESIGNABLE @interface DHTUIButton : UIButton  @end @implementation DHTUIButton @end

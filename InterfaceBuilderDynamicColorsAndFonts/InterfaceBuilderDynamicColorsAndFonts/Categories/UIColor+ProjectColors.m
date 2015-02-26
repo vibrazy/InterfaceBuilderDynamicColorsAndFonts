@@ -40,4 +40,9 @@
     return [[self class] colorWithR:56 G:237 B:56 A:1.0];
 }
 
++ (instancetype)blackCustom
+{
+    return [[self class] colorWithWhite:0.0 alpha:0.8];
+}
+
 @end

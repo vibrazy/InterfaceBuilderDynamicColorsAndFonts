@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (ProjectColors)
-
++ (instancetype)oliveDrabColor;
 @end
